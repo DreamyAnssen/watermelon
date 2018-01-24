@@ -1,0 +1,116 @@
+clearfix::after,
+.main-header::after {
+	content: '';
+	clear: both;
+	display: table;
+	overflow: hidden;
+}
+
+
+img {
+	width: 100%;
+}
+
+.header {
+	background-color: #528355;
+	background-image: url('../pics/bg/bg-header.png');
+	width: 100%;
+	padding: 20px 0 100px;
+}
+
+.header-container {
+	max-width: 980px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.main-header {
+	text-align: left;
+}
+
+.hydric-title {
+	color: #fff;
+	font-family: "Myriad Pro";
+	font-size: 37px;
+	font-weight: 700;
+	line-height: 80px;
+	/* Text style for "H, ydric" */
+	letter-spacing: -0.35px;
+	overflow: hidden;
+}
+
+.hydric-title::before {
+	content: : url('../pics/icons/header-hydric.png');
+	
+	/* Style for "Vector Sma" */
+	width: 56px;
+	height: 33px;
+	padding-right: 60px;
+}
+
+.header-menu {
+	float: right;
+}
+
+.header-menu a {
+	color: #fff;
+	font-family: "Myriad Pro - Semibold";
+	font-size: 21px;
+	font-weight: 400;
+	line-height: 80px;
+	/* Text style for "Home" */
+	letter-spacing: -0.36px;
+	padding: 10px;
+	margin: 0 5px;
+}
+
+.header-menu a:hover {
+	border: 3px solid #ffffff;
+}
+
+h1 {
+	color: #fff;
+	font-family: "Myriad Pro";
+	font-size: 48px;
+	font-weight: 400;
+	line-height: 102.24px;
+	/* Text style for "S, weet an" */
+	letter-spacing: -0.36px;
+}
+
+.header-img {
+	width: 252px;
+	margin: 0 auto;
+}
+
+.container-about {
+	padding: 115px 0;
+	text-align: center;
+}
+
+.container-about h2 {
+	color: #4e4e4e;
+	font-family: "Myriad Pro";
+	font-size: 47px;
+	font-weight: 400;
+	line-height: 50.08px;
+	/* Text style for "More flavo" */
+	letter-spacing: -0.72px;
+}
+
+.container-about p {
+	color: #737070;
+	font-family: "Myriad Pro";
+	font-size: 25px;
+	font-weight: 400;
+	line-height: 26.72px;
+	/* Text style for "Lorem ipsu" */
+	letter-spacing: -0.72px;
+	margin-top: 10px;
+}
+
+.about-img {
+	width: 250px;
+	display: inline-block;
+	padding-top: 70px;
+}
