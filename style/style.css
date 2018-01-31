@@ -6,7 +6,6 @@ clearfix::after,
 	overflow: hidden;
 }
 
-
 img {
 	width: 100%;
 }
@@ -28,54 +27,68 @@ img {
 	text-align: left;
 }
 
-.hydric-title {
+.hydric-img,
+.hydric-title,
+.plans-item {
+	display: inline-block;
+}
+
+.hydric-img {
+	width: 56px;
+	height: 33px;
+}
+
+h1, h2 {
 	color: #fff;
 	font-family: "Myriad Pro";
+	letter-spacing: -0.35px;
+}
+
+h1 {
 	font-size: 37px;
 	font-weight: 700;
 	line-height: 80px;
-	/* Text style for "H, ydric" */
-	letter-spacing: -0.35px;
-	overflow: hidden;
 }
 
-.hydric-title::before {
-	content: : url('../pics/icons/header-hydric.png');
-	
-	/* Style for "Vector Sma" */
-	width: 56px;
-	height: 33px;
-	padding-right: 60px;
+h2 {
+	font-size: 48px;
+	font-weight: 400;
+	line-height: 102.24px;
+}
+
+p {
+	font-family: "Myriad Pro";
+	font-weight: 400;
+	font-size: 25px;
+	line-height: 26.72px;
+	letter-spacing: -0.72px;
 }
 
 .header-menu {
 	float: right;
 }
 
-.header-menu a {
-	color: #fff;
+a {
 	font-family: "Myriad Pro - Semibold";
-	font-size: 21px;
 	font-weight: 400;
-	line-height: 80px;
-	/* Text style for "Home" */
-	letter-spacing: -0.36px;
 	padding: 10px;
 	margin: 0 5px;
 }
 
-.header-menu a:hover {
-	border: 3px solid #ffffff;
+.header-menu a {
+	color: #fff;
+	font-size: 21px;
+	line-height: 80px;
+	letter-spacing: -0.36px;
+	border: 3px solid transparent;
 }
 
-h1 {
-	color: #fff;
-	font-family: "Myriad Pro";
-	font-size: 48px;
-	font-weight: 400;
-	line-height: 102.24px;
-	/* Text style for "S, weet an" */
-	letter-spacing: -0.36px;
+.header-menu a:last-child {
+	border-color: #fff;
+}
+
+.header-menu a:hover {
+	border-color: #FF8000;
 }
 
 .header-img {
@@ -83,34 +96,253 @@ h1 {
 	margin: 0 auto;
 }
 
-.container-about {
+.container-features {
 	padding: 115px 0;
 	text-align: center;
 }
 
-.container-about h2 {
+.container-features h2 {
 	color: #4e4e4e;
-	font-family: "Myriad Pro";
 	font-size: 47px;
-	font-weight: 400;
 	line-height: 50.08px;
-	/* Text style for "More flavo" */
 	letter-spacing: -0.72px;
 }
 
-.container-about p {
+.container-features p {
 	color: #737070;
-	font-family: "Myriad Pro";
-	font-size: 25px;
-	font-weight: 400;
-	line-height: 26.72px;
-	/* Text style for "Lorem ipsu" */
-	letter-spacing: -0.72px;
 	margin-top: 10px;
 }
 
-.about-img {
+.features-img {
 	width: 250px;
-	display: inline-block;
+	margin: 0 auto;
 	padding-top: 70px;
+}
+
+.container-nutrition {
+	 background-color: #2b342b;
+	 text-align: center;
+	 padding: 100px 0;
+}
+
+.container-nutrition p {
+	color:  #fff;
+}
+
+.nutrition-calories p,
+.nutrition-fat p,
+.nutrition-water p,
+.nutrition-protein p {
+	font-size: 22px;
+	line-height: 23.54px;
+	color: #e5e5e5;
+}
+
+.nutrition-img {
+	width: 280px;
+	margin: 0 auto;
+	position: relative;
+	padding-top: 50px;
+}
+
+.nutrition-calories {
+	background: url('../pics/icons/calories-line.png') no-repeat;
+	position: absolute;
+	top: 52%;
+	right: 100%;
+	margin-right: -41px;
+	padding-bottom: 11px;
+	text-align: left;
+	width: 205px;
+}
+
+.nutrition-fat {
+	background: url('../pics/icons/fat-line.png') no-repeat;
+	background-position: bottom left;
+	position: absolute;
+	top: 100%;
+	right: 45%;
+	margin-top: -50px;
+	padding-bottom: 15px;
+	text-align: left;
+	width: 205px;
+}
+
+.nutrition-water {
+	background: url('../pics/icons/water-line.png') no-repeat;
+	background-position: bottom right;
+	position: absolute;
+	top: 100%;
+	left: 72%;
+	padding-right: 7px;
+	padding-bottom: 15px;
+	margin-top: -106px;
+	text-align: right;
+	width: 180px;
+}
+
+.nutrition-protein {
+	background: url('../pics/icons/protein-line.png') no-repeat;
+	background-position: bottom;
+	position: absolute;
+	bottom: 100%;
+	left: 100%;
+	margin-bottom: -150px;
+	margin-left: -50px;
+	padding-right: 7px;
+	padding-bottom: 65px;
+	text-align: right;
+	width: 215px;
+}
+
+.container-plans,
+.footer {
+	background-color: #e9ede9;
+}
+
+.plans-buynow {
+	margin: 0 auto;
+	text-align: center;
+	padding: 110px 0;
+	max-width: 980px;
+}
+
+.plans-buynow h2 {
+	color: #4e4e4e;
+	font-size: 47px;
+	line-height: 50.08px;
+	letter-spacing: -0.72px;
+}
+
+.plans-buynow > p {
+	color: #737070;
+	margin-top: 10px;
+}
+
+.purchase-plans {
+	width: 100%;
+	margin-top: 100px;
+}
+
+.plans-item {
+	width: 300px;
+	text-align: center;
+	background-color: #d3cfcf;
+	margin: 5px 1.2%;
+	padding: 35px 0;
+}
+
+.plans-item h3 {
+	color: #7d7b7b;
+	font-family: "Myriad Pro - Semibold";
+	font-size: 33px;
+	font-weight: 400;
+	line-height: 34.67px;
+	letter-spacing: -0.72px;
+	padding-bottom: 50px;
+}
+
+.plans-item-greytitle {
+	color: #afacac;
+	font-family: "Myriad Pro";
+	font-size: 33px;
+	font-weight: 400;
+	line-height: 34.67px;
+	letter-spacing: -0.72px;
+}
+
+.starting-at {
+	color: #4e4e4e;
+	font-size: 32px;
+	line-height: 33.69px;
+	padding-bottom: 20px;
+}
+
+.price {
+	color: #b38e48;
+	font-size: 32px;
+	line-height: 33.69px;
+}
+
+.details {
+	width: 113px;
+	height: 37px;
+	border-radius: 13px;
+	background-color: #71ae5a;
+	border:  none;
+	margin-top: 40px;
+	cursor: pointer;
+}
+
+.details p {
+	color: #e9ede9;
+	font-size: 16px;
+	line-height: 16.74px;
+}
+
+.footer {
+	padding: 90px 0;
+}
+
+.container-footer {
+	max-width: 980px;
+	width: 100%;
+	margin: 0 auto;
+	position: relative;
+}
+
+.footer-menu {
+	margin-bottom: 15px;
+}
+
+.footer-menu a {
+	color: #747373;
+	font-size: 18px;
+	line-height: 18px;
+}
+
+.footer-menu a:hover {
+	background-color:  #71ae5a;
+	color: #e9ede9;
+	border-radius: 13px;
+}
+
+.container-footer .rights-reserved {
+	color: #958f8f;
+	font-size: 18px;
+	line-height: 17.82px;
+	letter-spacing: -0.77px;
+	margin-left: 15px;
+}
+
+.footer-up {
+	position: absolute;
+	top: 0;
+	right: 0;
+	border: none;
+	width: 40px;
+	height: 40px;
+	padding-bottom: 5px;
+	background-color: #71ae5a;
+	--moz-border-radius: 50%;
+	--webkit-border-radius: 50%;
+	border-radius: 50%;
+}
+
+.footer-up a {
+	padding: 0;
+	margin: auto;
+}
+
+.up-to-home {
+	width: 0;
+	height: 0;
+	margin: auto;
+	border-left: 12px solid transparent;
+	border-right: 12px solid transparent;
+	border-bottom: 20px solid #e9ede9;
+}
+
+.footer-up a:active {
+	transition: all 2s linear;
 }
