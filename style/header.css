@@ -1,0 +1,122 @@
+.header {
+    background-color: #528355;
+    background-image: url('../pics/bg/bg-header.png');
+    width: 100%;
+    padding: 20px 0 100px;
+}
+
+.header-container {
+    max-width: 980px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.main-header {
+    text-align: left;
+    padding: 0 10px;
+    position: relative;
+}
+
+.hydric-img {
+    width: 56px;
+    height: 33px;
+}
+
+.menu-checkbox {
+    display: none;
+}
+
+.menu-checkbox:checked+.header-menu {
+    visibility: visible;
+    opacity: 1;
+    margin-top: 10px;
+}
+
+.menu-checkbox:checked~.menu-button {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.header-menu {
+    float: right;
+    text-align: center;
+    transition: all 0.5s ease;
+}
+
+.header-menu a {
+    color: #fff;
+    font-size: 21px;
+    line-height: 80px;
+    letter-spacing: -0.36px;
+    border: 3px solid transparent;
+    min-width: 80px;
+}
+
+.header-menu a:last-child {
+    border-color: #fff;
+}
+
+.header-menu a:hover {
+    border-color: #FF8000;
+}
+
+.header-img {
+    width: 252px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 360px) {
+    .header-img {
+        width: 220px;
+    }
+}
+
+.menu-button {
+    width: 40px;
+    height: 25px;
+    display: none;
+    float: right;
+    position: relative;
+}
+
+.line {
+    display: block;
+    background: #fff;
+    width: 40px;
+    height: 4px;
+    position: absolute;
+    border-radius: 25px;
+}
+
+.line-1 {
+    top: 0;
+}
+
+.line-2 {
+    top: 50%;
+}
+
+.line-3 {
+    top: 100%;
+}
+
+@media screen and (max-width: 750px) {
+    .header-menu {
+        position: absolute;
+        top: 0;
+        right: 50px;
+        background: rgba(0, 0, 0, 0.5);
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    .header-menu a {
+        display: block;
+        padding: 10px 40px;
+        line-height: 40px;
+    }
+
+    .menu-button {
+        display: inline-block;
+        margin-top: 10px;
+    }
+}

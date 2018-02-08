@@ -1,0 +1,160 @@
+.container-nutrition {
+    background-color: #2b342b;
+    text-align: center;
+    padding: 100px 10px;
+}
+
+.container-nutrition p {
+    color: #fff;
+}
+
+@media screen and (max-width: 360px) {
+    .container-nutrition {
+        padding: 70px 10px;
+    }
+}
+
+.nutrition-calories p,
+.nutrition-fat p,
+.nutrition-water p,
+.nutrition-protein p {
+    font-size: 22px;
+    line-height: 23.54px;
+    color: #e5e5e5;
+}
+
+@media screen and (max-width: 630px) {
+    .nutrition-calories p,
+    .nutrition-fat p,
+    .nutrition-water p,
+    .nutrition-protein p {
+        font-size: 20px;
+        line-height: 1;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .nutrition-calories p,
+    .nutrition-fat p,
+    .nutrition-water p,
+    .nutrition-protein p {
+        font-size: 17px;
+    }
+}
+
+.nutrition-img {
+    width: 280px;
+    margin: 0 auto;
+    position: relative;
+    padding-top: 50px;
+}
+
+
+.nutrition-calories {
+    background: url('../pics/icons/calories-line.png') no-repeat;
+    position: absolute;
+    background-position: bottom right;
+    top: 52%;
+    right: 100%;
+    margin-right: -41px;
+    padding-bottom: 11px;
+    text-align: left;
+    width: 205px;
+}
+
+.nutrition-fat {
+    background: url('../pics/icons/fat-line.png') no-repeat;
+    background-position: bottom right;
+    position: absolute;
+    top: 100%;
+    right: 45%;
+    margin-top: -50px;
+    padding-bottom: 15px;
+    text-align: left;
+    width: 199px;
+}
+
+.nutrition-water {
+    background: url('../pics/icons/water-line.png') no-repeat;
+    background-position: bottom left;
+    position: absolute;
+    top: 100%;
+    left: 72%;
+    padding-right: 7px;
+    padding-bottom: 15px;
+    margin-top: -106px;
+    text-align: right;
+    width: 180px;
+}
+
+.nutrition-protein {
+    background: url('../pics/icons/protein-line.png') no-repeat;
+    background-position: bottom left;
+    position: absolute;
+    bottom: 100%;
+    left: 100%;
+    margin-bottom: -150px;
+    margin-left: -50px;
+    padding-right: 7px;
+    padding-bottom: 65px;
+    text-align: right;
+    width: 215px;
+}
+
+@media screen and (max-width: 630px) {
+    .nutrition-img {
+        width: 150px;
+    }
+
+    .nutrition-calories {
+        top: 63%;
+        right: 100%;
+        margin-right: -91px;
+        padding-bottom: 15px;
+        width: 199px;
+    }
+
+    .nutrition-fat {
+        top: 50%;
+        width: 190px;
+    }
+
+    .nutrition-water {
+        left: 43%;
+        margin-top: -38px;
+    }
+
+    .nutrition-protein {
+        margin-bottom: -110px;
+        margin-left: -92px;
+        width: 182px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .nutrition-calories {
+        background-size: 100%;
+        top: 64%;
+        right: 100%;
+        margin-right: -100px;
+        padding-bottom: 9px;
+        width: 136px;
+    }
+
+    .nutrition-fat {
+        width: 120px;
+    }
+
+    .nutrition-water {
+        width: 120px;
+    }
+
+    .nutrition-protein {
+        background-size: 106%;
+        margin-bottom: -100px;
+        margin-left: -100px;
+        width: 140px;
+        padding-right: 0;
+        padding-bottom: 46px;
+    }
+}
